@@ -1,10 +1,13 @@
 <html>
-<title>Visually Impaired Person</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size: 16px;}
@@ -12,7 +15,25 @@ img {margin-bottom: -8px;}
 .mySlides {display: none;}
 </style>
 <body class="w3-content w3-black" style="max-width:1500px;">
-
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://visually-impaired-person.github.io/Visually_Impaired_Person/" style="color:#CFA50D">VIP</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="https://visually-impaired-person.github.io/Visually_Impaired_Person/">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Links<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://github.com/Visually-Impaired-Person/Visuallyimpairedpeople/blob/master/Android%20Application%20of%20visually%20impaired%20person_Report%20.pdf">Documentation</a></li>
+          <li><a href="https://github.com/Visually-Impaired-Person/Visuallyimpairedpeople/blob/master/Visually%20impaired%20perso_%20Plan.pdf">Implementation Plan</a></li>
+          <li><a href="https://github.com/Visually-Impaired-Person/Visuallyimpairedpeople/blob/master/Android%20Application%20of%20visually%20impaired%20person_Proposal.pdf">Proposal</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact us</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>
+  </div>
+</nav>
 <!-- Header with Slideshow -->
 <header class="w3-display-container w3-center">
   <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
@@ -59,20 +80,28 @@ img {margin-bottom: -8px;}
     <div class="w3-col l8 m6">
       <h1 class="w3-jumbo"><b>The App</b></h1>
       <h1 class="w3-xxxlarge w3-text-green"><b>Why use it?</b></h1>
-      <p><span class="w3-xlarge">Take photos like a pro.</span> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p><span class="w3-xlarge">For Blind Person</span> Application for detecting an object using the mobile camera and giving voice instructions about 
+	  the objects, recognized by camera and to give the direction of an object to the blind person. System extracts the features to search objects in the 
+	  camera view to know the direction of object, where it is placed using angle extraction feature. The camera of the phone is enough for this purpose 
+	  and no special hardware is required, ensuring that it requires minimal effort from the user to use the application during everyday life. Many of 
+	  us need to make a call or send a message at anytime from anywhere. So In this application, any blind person can easily make a call and send a 
+	  message to any desired person. Also the proposed system converts the text into audio for giving the notifications about the application to 
+	  the blind person and for such conversion the Speech synthesizer technique gets used. Application has also the capability to measure the 
+	  distance by taking the current and designation location. System gets used in social approach where the object in place or in path everyday
+	  life and with the help 
+	  of this system blind person easily travel or visit common places such as school, college, hospital, shopping mall and travel on roads.</p>
       <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
         <i class="fa fa-download"></i> Download Application
       </button>
       <p>Available for <i class="fa fa-android w3-xlarge w3-text-green"></i> <i class="fa fa-apple w3-xlarge"></i> <i class="fa fa-windows w3-xlarge w3-text-blue"></i></p>
     </div>
     <div class="w3-col l4 m6">
-      <img src="/w3images/img_app.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
+      <img src="oh8.png" class="w3-image w3-right w3-hide-small" width="335" height="471">
       <div class="w3-center w3-hide-large w3-hide-medium">
         <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
           <i class="fa fa-download"></i> Download Application
         </button>
-        <img src="oh7.jpg" class="w3-image w3-margin-top" width="335" height="471">
+        <img src="oh8.png" class="w3-image w3-margin-top" width="335" height="471">
       </div>
     </div>
   </div>
@@ -111,13 +140,13 @@ img {margin-bottom: -8px;}
   <h1 class="w3-jumbo"><b>Features</b></h1>
   <p>This app is contain following features</p>
 
-  <div class="w3-row" style="margin-top:64px">
+  <div class="w3-row" style="margin-top:4px">
     <div class="w3-col s3">
       <i class="glyphicon glyphicon-envelope w3-text-orange w3-jumbo"></i>
       <p>Message</p>
     </div>
     <div class="w3-col s3">
-      <i class="fas fa-phone-square-alt w3-text-red w3-jumbo"></i>
+      <i class="fa fa-volume-control-phone w3-text-red w3-jumbo"></i>
       <p>Call</p>
     </div>
     <div class="w3-col s3">
@@ -125,62 +154,25 @@ img {margin-bottom: -8px;}
       <p>Lookout camera</p>
     </div>
     <div class="w3-col s3">
-      <i class="fab fa-sistrix w3-text-green w3-jumbo"></i>
+      <i class="fa fa-search w3-text-green w3-jumbo"></i>
       <p>OCR</p>
     </div>
   </div>
 
-  <div class="w3-row" style="margin-top:64px">
+  <div class="w3-row" style="margin-top:04px">
     <div class="w3-col s3">
-      <i class="pin_drop w3-text-white w3-jumbo"></i>
+      <i class="fa fa-map-marker w3-text-white w3-jumbo"></i>
       <p>Measure Distance</p>
     </div>
     <div class="w3-col s3">
-      <i class="fas fa-question-circle w3-text-blue w3-jumbo"></i>
+      <i class="fa fa-question-circle w3-text-blue w3-jumbo"></i>
       <p>Help</p>
     </div>
     
   </div>
 </div>
 
-<!-- Pricing Section -->
-<div class="w3-padding-64 w3-center w3-white">
-  <h1 class="w3-jumbo"><b>Pricing</b></h1>
-  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-half w3-section">
-      <ul class="w3-ul w3-card w3-hover-shadow">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16"><b>250</b> Photos</li>
-        <li class="w3-padding-16"><b>10</b> Features</li>
-        <li class="w3-padding-16"><b>No</b> Ads</li>
-        <li class="w3-padding-16"><b>Office hours</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-opacity">$ 25</h2>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"><i class="fa fa-download"></i> Download</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-half w3-section">
-      <ul class="w3-ul w3-card w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-32">Premium</li>
-        <li class="w3-padding-16"><b>1000</b> Photos</li>
-        <li class="w3-padding-16"><b>50</b> Features</li>
-        <li class="w3-padding-16"><b>No</b> Ads</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-opacity">$ 99</h2>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"> <i class="fa fa-download"></i> Download</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <br>
-</div>
+
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
@@ -192,7 +184,7 @@ img {margin-bottom: -8px;}
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">health organization</a></p>
 </footer>
 
 <script>
